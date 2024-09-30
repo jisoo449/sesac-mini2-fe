@@ -13,7 +13,7 @@ function App() {
 
   //백엔드와 통신
   useEffect(()=>{
-    axios.get('http://api.test.com')
+    axios.get('http://api.test.com:30711')
         .then(res=>setUserData({name:res.data.name, age:res.data.age, gender:res.data.gender}))
         .catch(err=>console.error(err))
   },[])
